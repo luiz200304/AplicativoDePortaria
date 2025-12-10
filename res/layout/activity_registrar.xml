@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="112dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/white"
+            android:backgroundTint="#FFFFFF"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <EditText
+                android:id="@+id/edtMorador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do morador"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtUnidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Unidade"
+                android:inputType="number"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtPagina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Página"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:hint="Data"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:hint="Hora"
+                android:padding="12dp" />
+
+            <Spinner
+                android:id="@+id/spRetirada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <!-- CAMPO PARA ASSINATURA -->
+            <EditText
+                android:id="@+id/edtDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Assinatura"
+                android:padding="12dp"/>
+
+            <!-- BOTÃO PARA FOTO -->
+            <Button
+                android:id="@+id/btnFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#2196F3"
+                android:text="Selecionar / Tirar Foto"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#DDDDDD"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:text="Registrar Encomenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

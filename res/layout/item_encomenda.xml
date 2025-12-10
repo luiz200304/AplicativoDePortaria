@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_encomenda.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <!-- Texto principal: unidade + morador -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1.6"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUnidadeMorador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="101 - Nome do Morador"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tvPagina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pág. 15"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <!-- Data e hora -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/12/2025"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14:30"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <!-- Retirado -->
+    <TextView
+        android:id="@+id/tvRetirado"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Não"
+        android:textSize="13sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- Botões: Visualizar / Retirar -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp">
+
+        <Button
+            android:id="@+id/btnVisualizar"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:text="Visualizar"/>
+
+        <Button
+            android:id="@+id/btnRetirar"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="6dp"
+            android:text="Retirar"/>
+    </LinearLayout>
+
+</LinearLayout>
